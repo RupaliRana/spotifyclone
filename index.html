@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <div class="hero">
+        <!-- <div class="logo"></div> -->
+
+        <nav>
+            <div class="abc">
+                <img src="images/musiclogo.jpg" width="100" height="100" class="logo">
+                <h2>Music Player</h2>
+            </div>
+
+
+            <ul>
+                <li><a href="#sec1">Reviews</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <div>
+                <a href="login.php" class="login-btn">Log in</a>
+                <a href="register.php" class="btn">Sign Up</a>
+            </div>
+        </nav>
+        <div class="content">
+            <h1 class="anim">Live Your Day <br> With Music </h1>
+            <p class="anim">
+                Listen to songs that mak you groove that make you smile , <br> Or
+                In the aftermath of a breakup, just cry your eyes out in the car
+                to a soundtrack of breakup songs.
+            </p>
+            <a href="register.php" class="btn anim">Sign Up</a>
+        </div>
+        <img src="images/headphone3.jpg" class="feature-img anim">
+    </div>
+
+    <div class="container" id="sec1">
+        <div class="testimonial">
+            <div class="testimonial-text">
+                <div class="user-text">
+
+                    <p>
+                        Great platform. Songs ranging across all genres, categories are available on this website.
+                        You can add songs to the playlist. The website is user friendly.Loved the user friendliness of
+                        the site. Songs are categorised into different genres. so a user can listen to soundtracks
+                        according to their mood.
+                    </p>
+                    <span>Khushnuma Warsi</span>
+                </div>
+                <div class="user-text active-text">
+
+                    <p>
+                        Been using this platform for a while now. Loved the user friendliness of the site.
+                        Am really enjoying listening music on this website :)
+                    </p>
+                    <span>Rupali Rana</span>
+                </div>
+                <div class="user-text">
+                    <p>
+                        Only here for Zayn. Haha. The only plaform on my device that has good audio quality ,is easy to
+                        use. It's for great UI, you can find most of the songs though not all of them but this still
+                        better than the rest of the plaforms. Also its ad-free.
+                    </p>
+                    <span>Sneha Yadav</span>
+                </div>
+                <div class="user-text">
+                    <p>
+                        The website is user friendly.Loved the user friendliness of the site. Songs are
+                        categorised into different genres.
+                        Dolorum et ea libero illo enim id kuch bhi kuch bhi inventore iure rem soluta quos
+                        laboriosam, totam, reiciendis arey yaar kuch bhi hai distinctio hic. So a user can listen to
+                        soundtracks according to their mood.
+                    </p>
+                    <span>Aarya Zunjarrao</span>
+                </div>
+                <div class="user-text">
+                    <p>
+                        Great platform. Songs ranging across all genres, categories are available on this website.
+                        You can add songs to the playlist.Dolorum matlab kuch bhi et ea enim id sed
+                        adipisci aut kuch bhi kuch bhi, totam, arey bhai mat padh
+                        distinctio hic. The website is user friendly.Loved the user friendliness of
+                        the site. Songs are categorised into different genres.
+                    </p>
+                    <span>Poorva U</span>
+                </div>
+            </div>
+            <div class="testimonial-pic">
+                <img src="images/2.jpg" class="user-pic" width="80" height="60" onclick="showReview()">
+                <img src="images/2.jpg" class="user-pic active-pic" width="80" height="60" onclick="showReview()">
+                <img src="images/2.jpg" class="user-pic" width="80" height="60" onclick="showReview()">
+                <img src="images/2.jpg" class="user-pic" width="80" height="60" onclick="showReview()">
+                <img src="images/2.jpg" class="user-pic" width="80" height="60" onclick="showReview()">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let userTexts = document.getElementsByClassName("user-text");
+        let userPics = document.getElementsByClassName("user-pic");
+
+        function showReview() {
+            for (userPic of userPics) {
+                userPic.classList.remove("active-pic");
+            }
+            for (userText of userTexts) {
+                userText.classList.remove("active-text");
+            }
+
+            let i = Array.from(userPics).indexOf(event.target);
+            userPics[i].classList.add("active-pic");
+            userTexts[i].classList.add("active-text");
+
+        }
+
+    </script>
+</body>
+
+</html>

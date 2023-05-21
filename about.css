@@ -1,0 +1,213 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #080808;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 196px;
+    background-color: #000;
+    padding: 15px;
+}
+
+.sidebar .logo img {
+    width: 130px;
+}
+
+.sidebar .navigation ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.sidebar .navigation ul li {
+    padding: 10px 0px;
+}
+
+.sidebar .navigation ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.sidebar .navigation ul li a:hover,
+.sidebar .navigation ul li a:active,
+.sidebar .navigation ul li a:focus {
+    color: #ffffff;
+}
+
+.sidebar .navigation ul li a:hover .bi,
+.sidebar .navigation ul li a:active .bi,
+.sidebar .navigation ul li a:focus .bi {
+    color: #b3b3b3;
+}
+
+.sidebar .navigation ul li a .bi {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.sidebar .navigation ul li a:hover .bi:hover,
+.sidebar .navigation ul li a:active .bi:active,
+.sidebar .navigation ul li a:focus .bi:focus {
+    color: #ffffff;
+}
+
+.main-container {
+    margin-left: 230px;
+    margin-bottom: 100px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #080808;
+    padding: 14px 30px;
+}
+
+
+.topbar .prev-next-buttons button {
+    color: #7a7a7a;
+    cursor: not-allowed;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    font-size: 18px;
+    border: 0px;
+    background-color: #090909;
+    margin-right: 10px;
+}
+
+.topbar .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.topbar .navbar ul {
+    list-style: none;
+}
+
+.topbar .navbar ul li {
+    display: inline-block;
+    margin: 0px 8px;
+    width: 70px;
+}
+
+.topbar .navbar ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.topbar .navbar ul li a:hover,
+.topbar .navbar ul li a:focus,
+.topbar .navbar ul li a:active {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.topbar .navbar ul li.divider {
+    color: #fff;
+    font-size: 26px;
+    margin: 0px 20px;
+    width: auto;
+}
+
+.topbar .navbar button {
+    background-color: #ffffff;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.topbar .navbar button:hover,
+.topbar .navbar button:active,
+.topbar .navbar button:focus {
+    background-color: #f2f2f2;
+}
+
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+/*- Spotify--
+.spotify-playlist .list .item {
+
+    min-width: 140px;
+
+    width: 150px;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.spotify-playlist .list .item:hover {
+    background-color: #252525;
+}
+
+.spotify-playlist .list .item img {
+    width: 95%;
+    border-radius: 6px;
+    margin: 5px 5px;
+    box-shadow: 8px 7px 5px #101010;
+
+}
+
+.spotify-playlist .list .item .play {
+    position: relative;
+}
+
+.spotify-playlist .list .item .play .bi-play-fill {
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    opacity: 0;
+    transform: all ease 0.4s;
+}
+
+.spotify-playlist .list .item:hover .play .bi-play-fill {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.spotify-playlist .list .item h4 {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.spotify-playlist .list .item p {
+    color: #989898;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+}--*

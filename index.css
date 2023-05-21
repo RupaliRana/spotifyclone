@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #000000; */
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    /* background-image: url(images/back-image.png); */
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+    /*decides whether clip karaycha ka when content much bigger to fit into an area.*/
+    position: relative;
+    background-color: #000000;
+}
+
+nav {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .abc {
+    padding: 5px 5px;
+    display: flex;
+    align-items: center;
+}
+
+nav .abc h2 {
+    margin-left: 10px;
+    margin-top: 50px;
+
+}
+
+nav h2 {
+    color: #ababff;
+    margin-bottom: 40px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+}
+
+.login-btn {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+    font-weight: 400;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: #000000;
+    background: #9a9aff;
+    font-size: 19px;
+    border-radius: 30px;
+    border-top-right-radius: 30px;
+    transition: 0.5s;
+}
+
+.content {
+    margin-top: 10%;
+    max-width: 600px;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 70px;
+    color: #CCCCFF;
+}
+
+.content p {
+    margin: 10px 0 30px;
+    /* color: #333; */
+    animation-delay: 0.5s;
+}
+
+.content .btn {
+    padding: 15px 80px;
+    font-size: 20px;
+    font-weight: 00;
+    animation-delay: 1s;
+}
+
+.btn:hover {
+    border-top-right-radius: 0px;
+}
+
+.feature-img {
+    width: 530px;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+
+.feature-img.anim {
+    animation-delay: 1.5s;
+}
+
+.anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    /* background: #ffe8f0; */
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    /* border-radius: 30px; */
+}
+
+.testimonial-text {
+    background: #CCCCFF;
+    color: #000;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.user-text {
+    padding-top: 10%;
+    width: 80%;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.user-text span {
+    display: block;
+    font-size: 20px;
+    margin-top: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.testimonial-pic {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-pic {
+    width: 65px;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.user-text.active-text {
+    display: block;
+    animation: moveup2 0.5s linear forwards;
+}
+
+.user-pic.active-pic {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #CCCCFF;
+}
+
+@keyframes moveup2 {
+    0% {
+        margin-top: 25px;
+    }
+
+    100% {
+        margin-top: 0px;
+    }
+}
+
+@media(max-width:1080px) {
+    nav .abc {
+        display: none;
+    }
+
+    .content h1 {
+        font-size: 50px;
+
+    }
+
+    .content p {
+        margin: 10px 0 30px;
+
+    }
+
+}
